@@ -7,7 +7,10 @@ corresponding to the range of indexes to return in a list for those particular p
 Page numbers are 1-indexed, i.e the first page is page 1.
 """
 
-def index_range(page: int, page_size: int) -> tuple[int, int]:
+import typing
+
+
+def index_range(page: int, page_size: int) -> typing.Tuple[int, int]:
     """
     Calculate the start and end indexes of a given page and page size
     """
